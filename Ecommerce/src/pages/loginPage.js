@@ -4,7 +4,7 @@ import { useState } from "react";
 function LoginPage({ setIsAuthenticated }) {
   const navigate = useNavigate();
   const [error, setError] = useState("");
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+//const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -13,7 +13,7 @@ const BASE_URL = process.env.REACT_APP_BACKEND_URL;
     const password = event.target.password.value;
 
     try {
-      const response = await fetch(`${BASE_URL}/login`, {
+      const response = await fetch(`https://mern-ecom-icrv.onrender.com/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone, password }),
