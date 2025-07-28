@@ -65,7 +65,7 @@
 }
 /* === Category Tile Styles === */
 .categories-container {
- background: url('C:/mern/Ecommerce/public/shopping-bg.jpeg'); 
+ background: url('/public/shopping-bg.jpeg'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
